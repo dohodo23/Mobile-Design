@@ -11,4 +11,8 @@ $(document).ready(function() {
 function onDeviceReady(){	
         $( "#sortable" ).sortable();
         $( "#sortable" ).disableSelection();
+
+        $( "#expositiesB" ).bind("touchend",function(){
+        	window.location.replace("Pages/mijnPuzzel.html");
+        });
 }
