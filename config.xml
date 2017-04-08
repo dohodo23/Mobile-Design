@@ -1,0 +1,129 @@
+<!-- de eerste drie standaart door gecopierd worden-->
+<!-- nl.avans.aii.cmd. altijd gebruiken en dan de naam als je de eerste regels niet gebruikt dan werkt je app niet. -->
+<widget
+	xmlns         = "http://www.w3.org/ns/widgets"
+	xmlns:gap     = "http://phonegap.com/ns/1.0"
+	xmlns:android = "http://schemas.android.com/apk/res/android"
+	id            = "nl.avans.aii.cmd.MobileInteraction"
+	version       = "1.0.0"
+	versionCode   = "100"
+>
+	<name>
+		Mix your sound
+	</name>
+	<description>
+		Groeps project van mobile interaction
+	</description>
+	<author href="http://www.avans.nl" email="ljmhalin@avans.nl">	
+		Luc Halin
+		Dominique Hopman
+	</author>
+
+<!--Zorg in elk geval voor de default icon en splash-->
+	<icon src="icon.png" />		<!-- 128 x 128 -->
+	<splash src="splash.png" />	<!-- 320 x 480 -->
+<!-- Platform specific Icons -->
+	<platform name="ios">
+		<!-- iOS 7.0+ -->
+		<!-- iPhone 6 / 6+ -->
+		<icon src="icon/icon-60@3x.png" width="180" height="180" />
+		<!-- iPhone / iPod Touch  -->
+		<icon src="icon/icon-60.png" width="60" height="60" />
+		<icon src="icon/icon-60@2x.png" width="120" height="120" />
+		<!-- iPad -->
+		<icon src="icon/icon-76.png" width="76" height="76" />
+		<icon src="icon/icon-76@2x.png" width="152" height="152" />
+		<!-- Settings Icon -->
+		<icon src="icon/icon-small.png" width="29" height="29" />
+		<icon src="icon/icon-small@2x.png" width="58" height="58" />
+		<!-- Spotlight Icon -->
+		<icon src="icon/icon-40.png" width="40" height="40" />
+		<icon src="icon/icon-40@2x.png" width="80" height="80" />
+	</platform>
+	<platform name="android">
+		<!-- Android -->
+		<icon src="icon/ldpi.png" qualifier="ldpi" />
+		<icon src="icon/mdpi.png" qualifier="mdpi" />
+		<icon src="icon/hdpi.png" qualifier="hdpi" />
+		<icon src="icon/xhdpi.png" qualifier="xhdpi" />
+		<icon src="icon/xxhdpi.png" qualifier="xxhdpi" />
+		<icon src="icon/xxxhdpi.png" qualifier="xxxhdpi" />
+	</platform>
+	<platform name="winphone">
+		<!-- Windows Phone 8.1+ -->
+		<icon width="44"  height="44"  src="icon/Square44x44Logo.scale-100.png" />
+		<icon width="106" height="106" src="icon/Square44x44Logo.scale-240.png" />
+		<icon width="150" height="150" src="icon/Square150x150Logo.scale-100.png" />
+		<icon width="360" height="360" src="icon/Square150x150Logo.scale-240.png" />
+		<icon width="71"  height="71"  src="icon/Square71x71Logo.scale-100.png" />
+		<icon width="170" height="170" src="icon/Square71x71Logo.scale-240.png" />
+		<icon width="310" height="150" src="icon/Wide310x150Logo.scale-100.png" />
+		<icon width="744" height="360" src="icon/Wide310x150Logo.scale-240.png" />
+		<icon width="70"  height="70"  src="icon/Square70x70Logo.scale-100.png" />
+		<icon width="30"  height="30"  src="icon/Square30x30Logo.scale-100.png" />
+		<icon width="310" height="310" src="icon/Square310x310Logo.scale-100.png" />
+		<icon width="50"  height="50"  src="icon/StoreLogo.scale-100.png" />
+		<icon width="120" height="120" src="icon/StoreLogo.scale-240.png" />
+	</platform>
+
+<!-- Platform specific Splash Screens -->
+	<platform name="ios">
+		<!-- iOS 7.0+ -->
+		<!-- iPhone and iPod touch -->
+		<splash src="splash/Default.png" width="320" height="480" />
+		<splash src="splash/Default@2x.png" width="640" height="960" />
+		<!-- iPhone 5 / iPod Touch (5th Generation) -->
+		<splash src="splash/Default-568h@2x.png" width="640" height="1136" />
+		<!-- iPhone 6 -->
+		<splash src="splash/Default-667h@2x.png" width="750" height="1334" />
+
+		<splash src="splash/Default-Portrait-736h@3x.png" width="1242" height="2208" />
+		<splash src="splash/Default-Landscape-736h@3x.png" width="2208" height="1242" />
+		<!-- iPad -->
+		<splash src="splash/Default-Portrait.png" width="768" height="1024" />
+		<splash src="splash/Default-Landscape.png" width="1024" height="768" />
+		<!-- Retina iPad -->
+		<splash src="splash/Default-Portrait@2x.png" width="1536" height="2048" />
+		<splash src="splash/Default-Landscape@2x.png" width="2048" height="1536" />
+	</platform>
+	<platform name="android">
+		<!-- Android -->
+		<!-- Universal (Portrait + Landscape -->
+		<splash src="splash/ldpi.png"   qualifier="ldpi" />
+		<splash src="splash/mdpi.png"   qualifier="mdpi" />
+		<splash src="splash/hdpi.png"   qualifier="hdpi" />
+		<splash src="splash/xhdpi.png"  qualifier="xhdpi" />
+		<splash src="splash/xxhdpi.png" qualifier="xxhdpi" />
+		<!-- Portrait only -->
+		<splash src="splash/portrait-ldpi.png"   qualifier="port-ldpi" />
+		<splash src="splash/portrait-mdpi.png"   qualifier="port-mdpi" />
+		<splash src="splash/portrait-hdpi.png"   qualifier="port-hdpi" />
+		<splash src="splash/portrait-xhdpi.png"  qualifier="port-xhdpi" />
+		<splash src="splash/portrait-xxhdpi.png" qualifier="port-xxhdpi" />
+		<!-- Landscape only-->
+		<splash src="splash/landscape-ldpi.png"   qualifier="land-ldpi" />
+		<splash src="splash/landscape-mdpi.png"   qualifier="land-mdpi" />
+		<splash src="splash/landscape-hdpi.png"   qualifier="land-hdpi" />
+		<splash src="splash/landscape-xhdpi.png"  qualifier="land-xhdpi" />
+		<splash src="splash/landscape-xxhdpi.png" qualifier="land-xxhdpi" />
+	</platform>
+	<platform name="winphone">
+		<!-- Windows Phone 8.1+ -->
+		<splash width="1152" height="1920" src="splash/SplashScreenPhone.scale-240.png" />
+		<splash width="620"  height="300"  src="splash/SplashScreen.scale-100.png" />
+	</platform>
+
+	<!-- In previous versions of Phonegap this was needed to have an Android splash working -->
+	<preference name="SplashScreen" value="splash" />
+    <preference name="SplashScreenDelay" value="10000" />
+    <preference name="Orientation" value="portrait" />
+    
+
+	<plugin name="cordova-plugin-camera" spec="~2.3.1" /> 
+	
+	<plugin name="cordova-plugin-splashscreen" spec="~4.0.1" />
+
+	<plugin name="cordova-plugin-qrscanner" spec="~2.5.0">
+
+</widget>
+
